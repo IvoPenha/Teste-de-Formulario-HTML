@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+</head>
+<body>
+        <fieldset>
+            <legend>Conta: </legend>
+            <form method="GET"action="">
+                <div>
+                    <label >Email: </label>
+                    <input type="email" placeholder="Ex: xxxxxx@xxxx.xxx" name="email" required>
+                </div>
+                <div>
+                    <label>Senha: </label>
+                    <input type="password" name="senha" required>
+                </div>
+                
+        </fieldset>
+       <fieldset>
+           <legend>Dados Pessoais: </legend>
+        <div>
+            <label>Nome</label>
+            <input type="text" placeholder="Ex: Ivo" name="nome" required>
+        </div>
+        <div>
+            <label >Telefone:</label>
+            <input type="text" placeholder="Ex: (85)98888-8888" name="telefone">
+        </div>  
+         <div>
+            <label>Data de nascimento:</label>
+            <input type="date" name="data">
+        </div>
+        <div>
+            <label>Foto de Perfil</label>
+            <input type="file" accept="image/*" name="perfil_picture" >
+        </div>
+        <div>
+            <label>sexo</label>
+            <input type="radio" value="masculino" name="sexo" checked>
+            <label>masculino</label>
+            <input type="radio" value="feminino" name="sexo" >
+            <label>feminino</label>
+        </div>
+      
+       </fieldset>
+       <fieldset>
+           <legend>Endereço</legend>
+           <div>
+            <label >Rua:</label>
+            <input type="text" name="adress">
+        </div> 
+        <div>
+            <label>Numero</label>
+            <input type="number" min="1" max="99999" name="telefone">
+        </div>
+     
+        <div>
+            <label >Complemento:</label>
+            <input type="text" name="complemento">
+        </div>
+        <div>
+            <label >Cidade:</label>
+            <input type="text" name="cidade">
+        </div>
+        <div>
+            <label>Estado</label>
+            <select name="Estado">
+                <option value="CE">Ceará</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </select>
+        </div>
+       </fieldset>
+       <fieldset>
+           <legend>Anuncio</legend>
+            <div>
+                <label>Como me conheceu?</label>
+                <textarea maxlength="256" placeholder="Explique como conheceu a minha pessoa " rows="10" name="Como_conheceu"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="Desejo" id="Desejo" checked>
+                <label>Desejo receber ofertas por email</label>
+            </div>
+       </fieldset>
+       <button type="submit">Enviar</button>
+      
+    </form>
+    
+</body>
+</html>
